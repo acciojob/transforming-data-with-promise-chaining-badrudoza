@@ -6,7 +6,7 @@ const output=document.querySelector("#output");
 btn.addEventListener("click",()=>{
 promiseAndTransform()
 .then(res=>{
-	output.innerText="Result: "+res;
+	output.innerText="Final Result: "+res;
 	return new Promise(resolve=>{
 		setTimeout(()=>{
 			resolve(res*2);
@@ -14,7 +14,7 @@ promiseAndTransform()
 	});
 })
 .then(res=>{
-	output.innerText="Result: "+res;
+	output.innerText="Final Result: "+res;
 	return new Promise(resolve=>{
 		setTimeout(()=>{
 			resolve(res-3);
@@ -22,7 +22,7 @@ promiseAndTransform()
 	});
 })
 .then(res=>{
-	output.innerText="Result: "+res;
+	output.innerText="Final Result: "+res;
 	return new Promise(resolve=>{
 		setTimeout(()=>{
 			resolve(res/2);
@@ -30,7 +30,7 @@ promiseAndTransform()
 	});
 })
 .then(res=>{
-	output.innerText="Result: "+res;
+	output.innerText="Final Result: "+res;
 	return new Promise(resolve=>{
 		setTimeout(()=>{
 			resolve(res+10);
@@ -38,7 +38,7 @@ promiseAndTransform()
 	});
 })
 .then(res=>{
-		output.innerText="Result: "+res;
+		output.innerText="Final Result: "+res;
 });
 });
 function promiseAndTransform() {
